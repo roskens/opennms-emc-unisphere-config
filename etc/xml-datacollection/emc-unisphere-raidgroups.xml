@@ -1,0 +1,15 @@
+<xml-groups>
+    <xml-group name="emc-unisphere-raidgroups" resource-type="emc-unisphere-raidgroups" resource-xpath="/unisphere/raidgroup" key-xpath="attribute::id"
+               timestamp-xpath="/unisphere/@timestamp" timestamp-format="yyyy-MM-dd HH:mm:ss">
+<!--    <xml-object name="1234567890123456789" type="STRING"  xpath="attribute::id" /> -->
+        <xml-object name="emcRGID"             type="STRING"  xpath="attribute::id" />
+        <xml-object name="emcRGType"           type="STRING"  xpath="param[@name='RaidGroup Type']" />
+        <xml-object name="emcRGLoDs"           type="STRING"  xpath="param[@name='List of disks']" />
+        <xml-object name="emcRGLoLs"           type="STRING"  xpath="param[@name='List of luns']" />
+        <xml-object name="emcRGRawCapacity"    type="GAUGE"   xpath="param[@name='Raw Capacity (Blocks)']" />
+        <xml-object name="emcRGLogCapacity"    type="GAUGE"   xpath="param[@name='Logical Capacity (Blocks)']" />
+        <xml-object name="emcRGFreeCapacity"   type="GAUGE"   xpath="param[@name='Free Capacity (Blocks,non-contiguous)']" />
+        <xml-object name="emcRGPctDefragged"   type="GAUGE"   xpath="param[@name='Percent defragmented']" />
+        <xml-object name="emcRGPctExpanded"    type="GAUGE"   xpath="param[@name='Percent expanded']" />
+    </xml-group>
+</xml-groups>

@@ -1,0 +1,27 @@
+<xml-collection name="emc-unisphere">
+  <rrd step="300">
+    <rra>RRA:AVERAGE:0.5:1:2016</rra>
+    <rra>RRA:AVERAGE:0.5:12:1488</rra>
+    <rra>RRA:AVERAGE:0.5:288:366</rra>
+    <rra>RRA:MAX:0.5:288:366</rra>
+    <rra>RRA:MIN:0.5:288:366</rra>
+  </rrd>
+  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getcache.xml">
+    <xml-groups>xml-datacollection/emc-unisphere-sp-cache.xml</xml-groups>
+  </xml-source>
+  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getdisk.xml">
+    <xml-groups>xml-datacollection/emc-unisphere-disks.xml</xml-groups>
+  </xml-source>
+  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getlun.xml">
+    <xml-groups>xml-datacollection/emc-unisphere-luns.xml</xml-groups>
+  </xml-source>
+  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getrg.xml">
+    <xml-groups>xml-datacollection/emc-unisphere-raidgroups.xml</xml-groups>
+  </xml-source>
+  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.metalun.xml">
+    <xml-groups>xml-datacollection/emc-unisphere-metaluns.xml</xml-groups>
+  </xml-source>
+  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.port.xml">
+    <xml-groups>xml-datacollection/emc-unisphere-ports.xml</xml-groups>
+  </xml-source>
+</xml-collection>

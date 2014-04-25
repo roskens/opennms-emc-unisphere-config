@@ -1,0 +1,9 @@
+<xml-groups>
+    <xml-group name="emc-unisphere-sp-cache" resource-type="node" resource-xpath="/unisphere"
+               timestamp-xpath="/unisphere/@timestamp" timestamp-format="yyyy-MM-dd HH:mm:ss">
+        <xml-object name="emcLowWaterMark"     type="GAUGE" xpath="param[@name='Low Watermark']" />
+        <xml-object name="emcHighWaterMark"    type="GAUGE" xpath="param[@name='High Watermark']" />
+        <xml-object name="emcPctDrtyCachePgs"  type="GAUGE" xpath="param[@name='Prct Dirty Cache Pages']" />
+        <xml-object name="emcPctDrtyCacheOwnd" type="GAUGE" xpath="param[@name='Prct Dirty Cache Owned']" />
+    </xml-group>
+</xml-groups>

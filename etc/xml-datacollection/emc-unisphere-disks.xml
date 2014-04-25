@@ -1,0 +1,27 @@
+<xml-groups>
+    <xml-group name="emc-unisphere-disks" resource-type="emc-unisphere-disks" resource-xpath="/unisphere/disk" key-xpath="attribute::name"
+               timestamp-xpath="/unisphere/@timestamp" timestamp-format="yyyy-MM-dd HH:mm:ss">
+<!--    <xml-object name="1234567890123456789" type="STRING"  xpath="attribute::id" /> -->
+        <xml-object name="emcDiskName"         type="STRING"  xpath="attribute::name" />
+        <xml-object name="emcDiskBus"          type="STRING"  xpath="attribute::bus" />
+        <xml-object name="emcDiskEnclosure"    type="STRING"  xpath="attribute::enclosure" />
+        <xml-object name="emcDiskDriveNum"     type="STRING"  xpath="attribute::drive" />
+        <xml-object name="emcDRaidGroup"       type="STRING"  xpath="attribute::raid-group" />
+        <xml-object name="emcDDriveType"       type="STRING"  xpath="attribute::drive-type" />
+        <xml-object name="emcDHRErrs"          type="COUNTER" xpath="param[@name='Hard Read Errors']" />
+        <xml-object name="emcDHWErrs"          type="COUNTER" xpath="param[@name='Hard Write Errors']" />
+        <xml-object name="emcDSRErrs"          type="COUNTER" xpath="param[@name='Soft Read Errors']" />
+        <xml-object name="emcDSWErrs"          type="COUNTER" xpath="param[@name='Soft Write Errors']" />
+        <xml-object name="emcDReads"           type="COUNTER" xpath="param[@name='Number of Reads']" />
+        <xml-object name="emcDWrites"          type="COUNTER" xpath="param[@name='Number of Writes']" />
+        <xml-object name="emcDReadReqs"        type="COUNTER" xpath="param[@name='Read Requests']" />
+        <xml-object name="emcDWriteReqs"       type="COUNTER" xpath="param[@name='Write Requests']" />
+        <xml-object name="emcDKBRead"          type="COUNTER" xpath="param[@name='Kbytes Read']" />
+        <xml-object name="emcDKBWritten"       type="COUNTER" xpath="param[@name='Kbytes Written']" />
+        <xml-object name="emcDStripeBC"        type="COUNTER" xpath="param[@name='Stripe Boundary Crossing']" />
+        <xml-object name="emcDIdleTicks"       type="COUNTER" xpath="param[@name='Idle Ticks']" />
+        <xml-object name="emcDBusyTicks"       type="COUNTER" xpath="param[@name='Busy Ticks']" />
+        <xml-object name="emcDCurrentSpeed"    type="GAUGE"   xpath="attribute::speed" />
+        <xml-object name="emcDMaximumSpeed"    type="GAUGE"   xpath="attribute::maximum-speed" />
+    </xml-group>
+</xml-groups>

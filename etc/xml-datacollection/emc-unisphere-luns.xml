@@ -1,0 +1,53 @@
+<xml-groups>
+    <xml-group name="emc-unisphere-luns" resource-type="emc-unisphere-luns" resource-xpath="/unisphere/lun" key-xpath="attribute::id"
+               timestamp-xpath="/unisphere/@timestamp" timestamp-format="yyyy-MM-dd HH:mm:ss">
+<!--    <xml-object name="1234567890123456789" type="STRING"  xpath="attribute::id" /> -->
+        <xml-object name="emcLunID"            type="STRING"  xpath="attribute::id" />
+        <xml-object name="emcLunName"          type="STRING"  xpath="param[@name='Name']" />
+        <xml-object name="emcLunUID"           type="STRING"  xpath="param[@name='UID']" />
+        <xml-object name="emcLunRAIDType"      type="STRING"  xpath="@raid-type" />
+        <xml-object name="emcLunRAIDGroupID"   type="STRING"  xpath="@raid-group" />
+
+        <xml-object name="emcLunTotalHardErrs" type="COUNTER" xpath="param[@name='Total Hard Errors']" />
+        <xml-object name="emcLunTotalSoftErrs" type="COUNTER" xpath="param[@name='Total Soft Errors']" />
+        <xml-object name="emcLunTotalQueueLen" type="COUNTER" xpath="param[@name='Total Queue Length']" />
+        <xml-object name="emcLunReadRequests"  type="COUNTER" xpath="param[@name='Read Requests']" />
+        <xml-object name="emcLunWriteRequests" type="COUNTER" xpath="param[@name='Write Requests']" />
+        <xml-object name="emcLunBlocksRead"    type="COUNTER" xpath="param[@name='Blocks read']" />
+        <xml-object name="emcLunBlocksWritten" type="COUNTER" xpath="param[@name='Blocks written']" />
+        <xml-object name="emcLunReadCacheHits" type="COUNTER" xpath="param[@name='Read cache hits']" />
+        <xml-object name="emcLunWriteCacheHit" type="COUNTER" xpath="param[@name='Write cache hits']" />
+        <xml-object name="emcLunPrefetchedBlk" type="COUNTER" xpath="param[@name='Prefetched blocks']" />
+        <xml-object name="emcLunUnusedPrefBlk" type="COUNTER" xpath="param[@name='Unused prefetched blocks']" />
+        <xml-object name="emcLunForcedFlushes" type="COUNTER" xpath="param[@name='Forced flushes']" />
+        <xml-object name="emcLunStripeCrossng" type="COUNTER" xpath="param[@name='Stripe Crossing']" />
+        <xml-object name="emcLunPrctRebuilt"   type="GAUGE"   xpath="param[@name='Prct Rebuilt']" />
+        <xml-object name="emcLunPrctBound"     type="GAUGE"   xpath="param[@name='Prct Bound']" />
+        <xml-object name="emcLunCapacityMB"    type="GAUGE"   xpath="param[@name='LUN Capacity(Megabytes)']" />
+        <xml-object name="emcLunCapacityBlks"  type="GAUGE"   xpath="param[@name='LUN Capacity(Blocks)']" />
+
+        <xml-object name="emcLunReadHist0"     type="GAUGE"   xpath="param[@name='Read Histogram[0]']" />
+        <xml-object name="emcLunReadHist1"     type="GAUGE"   xpath="param[@name='Read Histogram[1]']" />
+        <xml-object name="emcLunReadHist2"     type="GAUGE"   xpath="param[@name='Read Histogram[2]']" />
+        <xml-object name="emcLunReadHist3"     type="GAUGE"   xpath="param[@name='Read Histogram[3]']" />
+        <xml-object name="emcLunReadHist4"     type="GAUGE"   xpath="param[@name='Read Histogram[4]']" />
+        <xml-object name="emcLunReadHist5"     type="GAUGE"   xpath="param[@name='Read Histogram[5]']" />
+        <xml-object name="emcLunReadHist6"     type="GAUGE"   xpath="param[@name='Read Histogram[6]']" />
+        <xml-object name="emcLunReadHist7"     type="GAUGE"   xpath="param[@name='Read Histogram[7]']" />
+        <xml-object name="emcLunReadHist8"     type="GAUGE"   xpath="param[@name='Read Histogram[8]']" />
+        <xml-object name="emcLunReadHist9"     type="GAUGE"   xpath="param[@name='Read Histogram[9]']" />
+        <xml-object name="emcLunReadHistOvFl"  type="GAUGE"   xpath="param[@name='Read Histogram overflows']" />
+
+        <xml-object name="emcLunWriteHist0"    type="GAUGE"   xpath="param[@name='Write Histogram[0]']" />
+        <xml-object name="emcLunWriteHist1"    type="GAUGE"   xpath="param[@name='Write Histogram[1]']" />
+        <xml-object name="emcLunWriteHist2"    type="GAUGE"   xpath="param[@name='Write Histogram[2]']" />
+        <xml-object name="emcLunWriteHist3"    type="GAUGE"   xpath="param[@name='Write Histogram[3]']" />
+        <xml-object name="emcLunWriteHist4"    type="GAUGE"   xpath="param[@name='Write Histogram[4]']" />
+        <xml-object name="emcLunWriteHist5"    type="GAUGE"   xpath="param[@name='Write Histogram[5]']" />
+        <xml-object name="emcLunWriteHist6"    type="GAUGE"   xpath="param[@name='Write Histogram[6]']" />
+        <xml-object name="emcLunWriteHist7"    type="GAUGE"   xpath="param[@name='Write Histogram[7]']" />
+        <xml-object name="emcLunWriteHist8"    type="GAUGE"   xpath="param[@name='Write Histogram[8]']" />
+        <xml-object name="emcLunWriteHist9"    type="GAUGE"   xpath="param[@name='Write Histogram[9]']" />
+        <xml-object name="emcLunWriteHistOvFl" type="GAUGE"   xpath="param[@name='Write Histogram overflows']" />
+    </xml-group>
+</xml-groups>

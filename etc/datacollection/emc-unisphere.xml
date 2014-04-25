@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<datacollection-group name="EMC-Unisphere">
+
+  <!-- EMC Unisphere Resource Types -->
+  <resourceType name="emc-unisphere-disks" label="EMC Unisphere Disk" resourceLabel="Bus ${emcDiskBus} Enclosure ${emcDiskEnclosure} Disk ${emcDiskDriveNum} (RAIDGroup: ${emcDRaidGroup}, Type: ${emcDDriveType} )">
+    <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+    <storageStrategy class="org.opennms.protocols.xml.collector.XmlStorageStrategy"/>
+  </resourceType>
+  <resourceType name="emc-unisphere-luns" label="EMC Unisphere LUN" resourceLabel="LUN ${emcLunID} (name: ${emcLunName})">
+    <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+    <storageStrategy class="org.opennms.protocols.xml.collector.XmlStorageStrategy"/>
+  </resourceType>
+  <resourceType name="emc-unisphere-metaluns" label="EMC Unisphere MetaLUN" resourceLabel="MetaLUN ${emcMetaLUN} (name: ${emcMetaLUNName})">
+    <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+    <storageStrategy class="org.opennms.protocols.xml.collector.XmlStorageStrategy"/>
+  </resourceType>
+  <resourceType name="emc-unisphere-ports" label="EMC Unisphere Port" resourceLabel="${emcPortSP} Port ${emcPortNumber} (WWN: ${emcPSPUID}, Status: ${emcPPortStatus})">
+    <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+    <storageStrategy class="org.opennms.protocols.xml.collector.XmlStorageStrategy"/>
+  </resourceType>
+  <resourceType name="emc-unisphere-raidgroups" label="EMC Unisphere RAIDGroup" resourceLabel="RAIDGroup ${emcRGID} (type ${emcRGType})">
+    <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+    <storageStrategy class="org.opennms.protocols.xml.collector.XmlStorageStrategy"/>
+  </resourceType>
+
+</datacollection-group>

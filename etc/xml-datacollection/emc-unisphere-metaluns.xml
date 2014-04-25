@@ -1,0 +1,43 @@
+<xml-groups>
+    <xml-group name="emc-unisphere-metaluns" resource-type="emc-unisphere-metaluns" resource-xpath="/unisphere/metalun" key-xpath="attribute::id"
+               timestamp-xpath="/unisphere/@timestamp" timestamp-format="yyyy-MM-dd HH:mm:ss">
+<!--    <xml-object name="1234567890123456789" type="STRING" xpath="attribute::id" /> -->
+        <xml-object name="emcMetaLUN"          type="STRING"  xpath="attribute::id" />
+        <xml-object name="emcMetaLUNName"      type="STRING"  xpath="param[@name='MetaLUN Name']" />
+
+        <xml-object name="emcMLPercentExpand"  type="GAUGE"   xpath="param[@name='Percent Expanded']" />
+        <xml-object name="emcMLTotalUserCapBL" type="GAUGE"   xpath="param[@name='Total User Capacity (Blocks)']" />
+        <xml-object name="emcMLTotalUserCapMB" type="GAUGE"   xpath="param[@name='Total User Capacity (Megabytes)']" />
+        <xml-object name="emcMLActUserCapBL"   type="GAUGE"   xpath="param[@name='Actual User Capacity (Blocks)']" />
+        <xml-object name="emcMLActUserCapMB"   type="GAUGE"   xpath="param[@name='Actual User Capacity (Megabytes)']" />
+
+        <xml-object name="emcMLReadRequests"   type="COUNTER" xpath="param[@name='Read Requests']" />
+        <xml-object name="emcMLWriteRequests"  type="COUNTER" xpath="param[@name='Write Requests']" />
+        <xml-object name="emcMLBlocksRead"     type="COUNTER" xpath="param[@name='Blocks Read']" />
+        <xml-object name="emcMLBlocksWritten"  type="COUNTER" xpath="param[@name='Blocks Written']" />
+
+        <xml-object name="emcMLReadHist0"      type="GAUGE"   xpath="param[@name='Read Histogram[0]']" />
+        <xml-object name="emcMLReadHist1"      type="GAUGE"   xpath="param[@name='Read Histogram[1]']" />
+        <xml-object name="emcMLReadHist2"      type="GAUGE"   xpath="param[@name='Read Histogram[2]']" />
+        <xml-object name="emcMLReadHist3"      type="GAUGE"   xpath="param[@name='Read Histogram[3]']" />
+        <xml-object name="emcMLReadHist4"      type="GAUGE"   xpath="param[@name='Read Histogram[4]']" />
+        <xml-object name="emcMLReadHist5"      type="GAUGE"   xpath="param[@name='Read Histogram[5]']" />
+        <xml-object name="emcMLReadHist6"      type="GAUGE"   xpath="param[@name='Read Histogram[6]']" />
+        <xml-object name="emcMLReadHist7"      type="GAUGE"   xpath="param[@name='Read Histogram[7]']" />
+        <xml-object name="emcMLReadHist8"      type="GAUGE"   xpath="param[@name='Read Histogram[8]']" />
+        <xml-object name="emcMLReadHist9"      type="GAUGE"   xpath="param[@name='Read Histogram[9]']" />
+        <xml-object name="emcMLReadHistOvFl"   type="GAUGE"   xpath="param[@name='Read Histogram Overflows']" />
+ 
+        <xml-object name="emcMLWriteHist0"     type="GAUGE"   xpath="param[@name='Write Histogram[0]']" />
+        <xml-object name="emcMLWriteHist1"     type="GAUGE"   xpath="param[@name='Write Histogram[1]']" />
+        <xml-object name="emcMLWriteHist2"     type="GAUGE"   xpath="param[@name='Write Histogram[2]']" />
+        <xml-object name="emcMLWriteHist3"     type="GAUGE"   xpath="param[@name='Write Histogram[3]']" />
+        <xml-object name="emcMLWriteHist4"     type="GAUGE"   xpath="param[@name='Write Histogram[4]']" />
+        <xml-object name="emcMLWriteHist5"     type="GAUGE"   xpath="param[@name='Write Histogram[5]']" />
+        <xml-object name="emcMLWriteHist6"     type="GAUGE"   xpath="param[@name='Write Histogram[6]']" />
+        <xml-object name="emcMLWriteHist7"     type="GAUGE"   xpath="param[@name='Write Histogram[7]']" />
+        <xml-object name="emcMLWriteHist8"     type="GAUGE"   xpath="param[@name='Write Histogram[8]']" />
+        <xml-object name="emcMLWriteHist9"     type="GAUGE"   xpath="param[@name='Write Histogram[9]']" />
+        <xml-object name="emcMLWriteHistOvFl"  type="GAUGE"   xpath="param[@name='Write Histogram Overflows']" />
+    </xml-group>
+</xml-groups>

@@ -1,0 +1,18 @@
+<xml-groups>
+    <xml-group name="emc-unisphere-ports" resource-type="emc-unisphere-ports" resource-xpath="/unisphere/port" key-xpath="attribute::name"
+               timestamp-xpath="/unisphere/@timestamp" timestamp-format="yyyy-MM-dd HH:mm:ss">
+<!--    <xml-object name="1234567890123456789" type="STRING"  xpath="attribute::id" /> -->
+        <xml-object name="emcPortName"         type="STRING"  xpath="attribute::name" />
+        <xml-object name="emcPortNumber"       type="STRING"  xpath="attribute::port" />
+        <xml-object name="emcPortSP"           type="STRING"  xpath="attribute::sp" />
+        <xml-object name="emcPBlocksRead"      type="COUNTER" xpath="stats/@blocks-read" />
+        <xml-object name="emcPBlocksWritten"   type="COUNTER" xpath="stats/@blocks-written" />
+        <xml-object name="emcPQueueFullBusy"   type="COUNTER" xpath="stats/@queue-full-busy" />
+        <xml-object name="emcPReads"           type="COUNTER" xpath="stats/@reads" />
+        <xml-object name="emcPWrites"          type="COUNTER" xpath="stats/@writes" />
+        <xml-object name="emcPLinkStatus"      type="STRING"  xpath="param[@name='Link Status']" />
+        <xml-object name="emcPPortStatus"      type="STRING"  xpath="param[@name='Port Status']" />
+        <xml-object name="emcPSPUID"           type="STRING"  xpath="param[@name='SP UID']" />
+        <xml-object name="emcPSpeedValue"      type="GAUGE"   xpath="param[@name='Speed Value']" />
+    </xml-group>
+</xml-groups>
