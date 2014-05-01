@@ -6,22 +6,22 @@
     <rra>RRA:MAX:0.5:288:366</rra>
     <rra>RRA:MIN:0.5:288:366</rra>
   </rrd>
-  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getcache.xml">
-    <xml-groups>xml-datacollection/emc-unisphere-sp-cache.xml</xml-groups>
+  <xml-source url="file:///opt/opennms/tmp/emc-unisphere/{ipaddr}.getcache.xml">
+    <import-groups>xml-datacollection/emc-unisphere-sp-cache.xml</import-groups>
   </xml-source>
-  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getdisk.xml">
-    <xml-groups>xml-datacollection/emc-unisphere-disks.xml</xml-groups>
+  <xml-source url="file:///opt/opennms/tmp/emc-unisphere/{ipaddr}.getdisk.xml">
+    <import-groups>xml-datacollection/emc-unisphere-disks.xml</import-groups>
   </xml-source>
-  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getlun.xml">
-    <xml-groups>xml-datacollection/emc-unisphere-luns.xml</xml-groups>
+  <xml-source url="file:///opt/opennms/tmp/emc-unisphere/{ipaddr}.getlun.xml">
+    <import-groups>xml-datacollection/emc-unisphere-luns.xml</import-groups>
   </xml-source>
-  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.getrg.xml">
-    <xml-groups>xml-datacollection/emc-unisphere-raidgroups.xml</xml-groups>
+  <xml-source url="file:///opt/opennms/tmp/emc-unisphere/{ipaddr}.getrg.xml">
+    <import-groups>xml-datacollection/emc-unisphere-raidgroups.xml</import-groups>
   </xml-source>
-  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.metalun.xml">
-    <xml-groups>xml-datacollection/emc-unisphere-metaluns.xml</xml-groups>
+  <xml-source url="file:///opt/opennms/tmp/emc-unisphere/{ipaddr}.metalun.xml">
+    <import-groups>xml-datacollection/emc-unisphere-metaluns.xml</import-groups>
   </xml-source>
-  <xml-source url="file://opt/opennms/tmp/emc-unisphere/{ipaddr}.port.xml">
-    <xml-groups>xml-datacollection/emc-unisphere-ports.xml</xml-groups>
+  <xml-source url="file:///opt/opennms/tmp/emc-unisphere/{ipaddr}.port.xml">
+    <import-groups>xml-datacollection/emc-unisphere-ports.xml</import-groups>
   </xml-source>
 </xml-collection>
